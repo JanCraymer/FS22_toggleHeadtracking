@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+    <author>CptCray</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Toggle Head-/Eyetracking ingame</en>
+        <de>Head-/Eyetracking im Spiel umschalten</de>
+        <fr>Basculer Head-/Eyetracking en jeu</fr>
+    </title>
+    <description>
+        <en><![CDATA[This mod allows to toggle Head-/Eyetracking ingame.
+        
+Notice: Head-/Eyetracking must be enabled in the game options initially]]></en>
+        <de><![CDATA[Dieser Mod erlaubt das Ein- und Ausschalten des Head-/Eyetracking direkt im Spiel.
+        
+Hinweis: Head-/Eyetracking muss initial in den Optionen aktiviert sein.]]></de>
+        <fr><![CDATA[Ce mod vous permet d'activer et de désactiver Head-/Eyetracking directement dans le jeu.
+        
+Remarque: Head-/Eyetracking doit d'abord être activé dans les options.]]></fr>
+    </description>
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="toggleHeadtracking.lua"/>
+    </extraSourceFiles>
+
+    <actions>
+		<action name="TOGGLE_HEADTRACKING" axisType="HALF" />		
+	</actions>
+
+	<inputBinding>
+		<actionBinding action="TOGGLE_HEADTRACKING">
+			<binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_t" />
+		</actionBinding>
+	</inputBinding>
+	
+	<l10n>
+        <text name="input_TOGGLE_HEADTRACKING">
+            <en>Toggle Head-/Eyetracking</en>
+            <de>Head-/Eyetracking umschalten</de>
+            <fr>Basculer Head-/Eyetracking</fr>
+        </text>
+	</l10n>
+</modDesc>
